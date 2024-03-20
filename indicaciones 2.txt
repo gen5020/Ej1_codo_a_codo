@@ -1,0 +1,30 @@
+1.Incluye un enlace en el menú de navegación que permita acceder a
+la página de listas.
+
+2.Crea un nuevo archivo llamado "lista.html".
+
+Asegúrate de incorporar el enlace al menú de navegación en todos
+los archivos HTML existentes,
+como "tabla.html" y "galeria.html". 
+Asegúrate de referenciar correctamente las rutas de los archivos.
+
+3.En el archivo "lista.html", organiza el contenido en cuatro secciones 
+distintas, cada una 
+mostrando un tipo diferente de lista: ordenada, desordenada, 
+definición y dependiente.
+
+4.Crea una carpeta denominada "img" para almacenar imágenes y guarda
+al menos dos imágenes
+dentro de ella.
+
+5.En el archivo "galeria.html", añade una nueva sección. 
+Dentro de esta sección, 
+incluye un contenedor que contenga: una imagen, un subtítulo, 
+una descripción,
+un enlace para abrir la imagen en una nueva ventana,
+opciones para descargar la imagen, 
+descargar un PDF y enviar un correo.
+
+6.Implementa un hipervínculo interno que redireccione 
+a una sección específica dentro
+del documento "galeria.html".
