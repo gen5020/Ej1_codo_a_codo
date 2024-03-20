@@ -1,0 +1,21 @@
+1. Crear un archivo HTML llamado hola_mundo.html
+1.1. Escribir un saludo usando una etiqueta para títulos.
+
+2. Crear archivos HTML llamados index.html, en una carpeta llamada templates, 
+crear galeria.html y tabla.html
+
+2.1. Completar la estructura de todos los documentos HTML.
+
+2.2. Separar el cuerpo del documento en tres partes: header/main/footer.
+
+2.3. En el header, crear un menú de navegación con 4 hipervínculos (<a></a>) 
+para: Inicio, Galería, Tabla, Google.
+
+2.4. Dentro del main, definir dos sections.
+
+2.5. En el primer section, definir dos bloques; uno para título y texto, el otro para una imagen.
+
+2.6. En la segunda section, agregar texto e implementar resaltado (<mark></mark>), 
+cursiva (<i></i>), remarcar palabras importantes (<strong></strong>),
+ títulos y subtítulos (<h1>, <h2>, ... <h6>), negrita (<b></b>), 
+subrayar (<u></u>), salto de línea (<br>).
