@@ -1,0 +1,10 @@
+1. Trabajar en el archivo tabla.html.
+2. Agrega un icono (.ico) a la página. Puedes convertir
+una imagen a formato .ico utilizando el sitio web: https://convertico.com/.
+3. Incluye etiquetas meta para palabras clave y descripción en el encabezado del documento HTML.
+4. Divide la página en tres secciones distintas:
+Una sección con dos divisiones una para reproducir un archivo de audio  y otra video.
+Otra sección con dos divisiones una para mostrar un mapa y otra para video de YouTube.
+Por último, en la última sección incluir una tabla de datos.
+5. Después de realizar los cambios, valida el HTML subiendo el archivo
+al servidor utilizando la herramienta de validación HTML en: https://validator.w3.org/.
