@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="galeria.html">Galería</a>
+            <a href="tabla.html">Tabla</a>
+            <a href="https://www.google.com">Google</a>
+            <a href="listas.html">Listas</a>
+            <a href="#">Formulario</a>
+        </nav>
+    </header>
+    <main>
+        <!--3. Agregar una sección y definir formulario:-->
+        <section>
+            <h1>Formulario de Inscripción</h1>
+            <!--* Agregar action con https://formspree.io/-->
+            <form action="https://formspree.io/" method="post">
+                <div>
+                <fieldset>
+                    <legend><b>Datos Personales</b></legend>
+                
+                <!--* Crear campos para nombre, apellido, fecha de nacimiento y edad.-->
+                 <div>  
+                <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Ernesto" name="nombre" id="nombre" required>
+                    
+                </div>
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" placeholder="Guevara" id="apellido" required>
+                </div>
+                <div>
+                    <label for="nac">Fecha de Nacimiento</label>
+                    <input type="date" name="nac" id="nac" required>
+                </div>
+                <div>
+                    <label for="edad">Edad</label>
+                    <input type="number" placeholder="46" name="edad" id="edad">
+                </div>
+            
+<!--* Agregar opciones para género: M,F, OTRO.-->
+                <div>
+                    <h4>Selecione género</h4>
+                    <input type="radio" name="genero" id="masculino" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="otro" name="genero" value="otro">
+                    <label for="otro">Otro</label>
+                </div>
+            </fieldset>
+        </div>
+<!--* Agregar opciones para área a desarrollarse con radio: App web, Análisis de datos, Desarrollo de juegos.-->
+<fieldset>
+    <legend><b>Conocimientos</b></legend>
+                <div>
+                    <h4>Área a Desarollarse</h4>
+                    <div>
+                    <input type="radio" name="area" id="appweb" value="App Web"  required>
+                    <label for="appweb">App Web</label>
+                </div>
+                   <div>
+                <input type="radio" name="area" id="datos" value="Análisis de datos" required>
+                    <label for="datos">Análisis de Datos</label>
+                </div>
+                   <div> <input type="radio" name="area" id="juegos" value="Desarrollo de Videojuegos">
+                    <label for="juegos">Desarrollo de Videojuegos</label>
+                </div>
+                </div>
+<!--* Agregar opciones para seleccionar tecnología con checkbox: HTML, CSS, JS-->
+               <div>
+                    <h4>Tecnologías</h4>
+                    <div>
+                    <input type="checkbox" name="html" id="html">
+                    <label for="html">HTML</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="css" id="css">
+                    <label for="css">CSS</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="js" id="js">
+                    <label for="js">JavaScript</label>
+                </div>
+                    <div>
+                <input type="checkbox" id="sql" name="sql">
+                    <label for="sql">MySql</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="java" id="java">
+                    <label for="java">Java</label>
+                </div>
+               </div>
+<!--* Agregar opciones para navegador:Chrome,Opera,Safari,Firefox, Edge.-->
+<div>
+<label for="navegador">Seleccione Navegador</label>
+<input list="browsers" id="navegador" name="navegador">
+<datalist id="browsers">
+    <option value="Chrome"></option>
+    <option value="Edge"></option>
+    <option value="Firefox"></option>
+    <option value="Opera"></option>
+    <option value="Safari"></option>
+</datalist>
+</div>
+</fieldset>
+   <!-- 
+* Agregar área para datos personales con fieldset: teléfono, correo.-->
+<div>
+    <fieldset>
+        <legend><b>Datos de contacto</b></legend>
+        <label for="tel">Teléfono</label>
+        <input type="tel" id="tel" name="tel" placeholder="1589237012" required>
+        <label for="mail">Correo Electronico</label>
+        <input type="email" placeholder="cheguevara@gmail.com" required name="mail" id="mail">
+        
+    </fieldset>
+</div>
+<div>
+    <label for="coment">Comentarios</label><br>
+    <textarea name="coment" id="coment" maxlength="300"></textarea>
+    <!--* Agregar área comentario.-->
+</div>
+
+          <!--* Agregar los botones para enviar(submit) y borrar(reset).-->
+          <div>
+            <button type="reset">Borrar</button>
+            <button type="submit">Enviar</button> 
+        </div>    
+    </form>
+        </section>
+    </main>
+</body>
+</html>
