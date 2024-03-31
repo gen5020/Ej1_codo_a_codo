@@ -11,12 +11,13 @@ parte del documento CSS.
    --color-primario: #0142b3;
    --color-secundario:rgb(228, 183, 3);
 }
-*{
-    /*background-color: var(--color-primario);*/
-    color: var(--color-secundario);
-}
 /*
-2. Agregar selector universal, eliminar todo margen y relleno.*/
+*{
+    background-color: var(--color-primario);
+    background-color: var(--color-secundario);
+}
+*/
+/*2. Agregar selector universal, eliminar todo margen y relleno.*/
 *{
     padding: 0;
     margin: 0;
@@ -27,7 +28,7 @@ parte del documento CSS.
 */
 body{
     font-family: 'Times New Roman', Times, serif;
-    background:linear-gradient(rgb(232, 255, 192),rgb(255, 140, 0),rgb(255, 200, 0))
+    background:linear-gradient(rgb(232, 255, 192),rgb(255, 140, 0),rgb(255, 200, 0));
 }
 /*
 4. Selecciona el encabezado por etiqueta y definir el color de
@@ -37,6 +38,7 @@ header{
     background-color: var(--color-primario);
    text-align: center;
    display: block;
+   min-width: 240px;
     
 }
 
@@ -89,6 +91,11 @@ todo el espacio del elemento.*/
     color:transparent;
     background-clip:text;
     -webkit-background-clip: text;
+    min-width: 240px;
+}
+#subtitulo{
+    font-size: 6vh;
+    margin-top: auto;
 }
 
 /*9. Seleccionar el id de la sección con fondo y definir:
@@ -98,24 +105,41 @@ y relleno.*/
 background-image: url(../img/programming-code-coding-or-hacker-background-programming-code-icon-made-with-binary-code-digital-binary-data-and-streaming-digital-code-vector.jpg);
 background-position: center;
 background-size: 100vw;
+background-size: 100vh;
 background-repeat: no-repeat;
 color: aliceblue;
 text-align: center;
-margin:  20px 0px 20px 0px;
-padding: 20vh 0px 20vh 0px;
+margin:  10px 0px 10px 0px;
+padding: 10vh 0px 10vh 0px;
+word-wrap: break-word;
+min-width: 240px;
 }
 /*10. Seleccionar la clase contenido y definir:
 margen, relleno, alinear texto y color al texto.*/
 .contenido{
-    margin: auto;
+    margin: 0;
     padding: auto;
     text-align: center;
-    color: aliceblue;
+    
 }
 /*11. Seleccionar el id del bloque-3 y definir:
-margen y alinear el texto.
+margen y alinear el texto.*/
+#bloque-3{
+    margin-right: 10px;
+    margin-left: 10px;
+    min-width: 240px;
+    text-align: center;
+    font-size: 4vh;
+    
+}
 
-
-12. Selccionar la etiqueta del pie de página
+/*12. Selccionar la etiqueta del pie de página
 y definir: color de fondo, color, relleno, alinear
 el texto al centro.*/
+footer{
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    padding: 10px;
+    text-align: center;
+    min-width: 240px;
+}
