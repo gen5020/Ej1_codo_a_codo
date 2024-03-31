@@ -3,15 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio</title>
+    <!-- CSS - INTERNO
+Incorporar el selector universal para eliminar todo margen y relleno por
+defecto a la página.-->
+<!--<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    /*Incorporar css interno, para modificar el tamaño de la 
+imagen del logo (width,height), seleccionar por etiqueta (img).*/
+    img{
+        width: 60px;
+      
+    }
+    /*Seleccionar la clase del titulo y cambiar color de texto.*/
+    .titulo{
+        color: rgb(255, 210, 10);
+    }
+    /*
+Seleccionar el id del párrafo y justificar el texto.*/
+    #parrafo{
+        text-align: justify;
+    }
+</style>
+-->
+<link rel="stylesheet" href="static/css/index.css">
 </head>
+
 <body>
     <!--2.2. Separar el cuerpo del documento en tres partes: header/main/footer.-->
     
     <header>
         <!--2.3. En el header, crear un menú de navegación con 4 hipervínculos (<a></a>) 
 para: Inicio, Galería, Tabla, Google.-->
-        <nav>
+        <div class="menu">
+            <img src="https://user-images.githubusercontent.com/83146564/137408912-013f0d0c-37d1-4dc2-a1b5-77356c1003f3.png" alt="logo" id="" class="logo">
+        </div>
+<nav class="menu">
             <a href="#">Inicio</a>
             <a href="./templates/tabla.html"> Tabla </a>
             <a href="https://www.google.com"> Google </a>
@@ -22,20 +52,26 @@ para: Inicio, Galería, Tabla, Google.-->
     </header>
 
     <main>
-inicio
+
 <!--2.4. Dentro del main, definir dos sections.-->
     <!-- 2.5. En el primer section, definir dos bloques; uno para título y texto, el otro para una imagen.-->
         <section>
-            <h1>Codo a Codo</h1>
+            <h1 class="titulo">Codo a Codo</h1>
         <h3><u>Full Stack Developer en Python</u></h3> 
         </section>
 
-        <section>
-            <img src="https://user-images.githubusercontent.com/83146564/137408912-013f0d0c-37d1-4dc2-a1b5-77356c1003f3.png" alt="">
+        <section id="section-fondo">
+            <!--<img src="https://user-images.githubusercontent.com/83146564/137408912-013f0d0c-37d1-4dc2-a1b5-77356c1003f3.png" alt="">-->
+            <img src="static/img/3d-python-programming-language-logo-free-png.png" alt="" width="100vh">
             <!--2.6. En la segunda section, agregar texto e implementar resaltado (<mark></mark>), 
 cursiva (<i></i>), remarcar palabras importantes (<strong></strong>),-->
-       <p>Convertite en un <strong><i><mark>Full Stack Developer en Python</mark></i></strong> dominando el lenguaje más requerido en la industria.<br> Aprendé a crear sitios web responsive y aplicaciones robustas en 20 semanas.<br> Adquirirás las habilidades necesarias para desarrollar aplicaciones desde el <strong><i>FrontEnd</i></strong> hasta el <strong><i>BackEnd</i></strong>.</p>
-</section>
+            <div class="contenido">
+                <h2>Python Full Stack </h2>
+            </div>
+<div>
+                     <p id="parrafo">Convertite en un <strong><i><mark>Full Stack Developer en Python</mark></i></strong> dominando el lenguaje más requerido en la industria.<br> Aprendé a crear sitios web responsive y aplicaciones robustas en 20 semanas.<br> Adquirirás las habilidades necesarias para desarrollar aplicaciones desde el <strong><i>FrontEnd</i></strong> hasta el <strong><i>BackEnd</i></strong>.</p>
+            </div>
+        </section>
 
 </main>
 

@@ -1,0 +1,65 @@
+CSS - INTERNO
+Incorporar el selector universal para eliminar todo margen y relleno por
+defecto a la página.
+
+Incorporar css interno, para modificar el tamaño de la 
+imagen del logo (width,height), seleccionar por etiqueta (img).
+
+Seleccionar la clase del titulo y cambiar color de texto.
+
+Seleccionar el id del párrafo y justificar el texto.
+
+CSS - EXTERNO
+1. Define las variables de colores en el bloque :root 
+Estas variables se usarán para definir los colores en todo el documento.
+:root, es un selector de CSS especial que selecciona el 
+elemento raíz del documento HTML, es decir, el elemento <html>. 
+Permite definir variables globales que se pueden usar en cualquier
+parte del documento CSS.
+
+2. Agregar selector universal, eliminar todo margen y relleno.
+
+3. Seleccionar la etiqueta body y definir estilo de fuente y fondo.
+
+4. Selecciona el encabezado por etiqueta y definir el color de
+fondo, color del texto del encabezado (header). Alinear el contenido
+del encabezado al centro.
+
+5. Asignar una clase llamada logo y seleccionar clase
+Aplica estilos ancho, alto, hacer el logo circular, 
+separar el logo del menú especificando margen a la derecha.
+
+6. Seleccionar del header el menu y la división para 
+cambiar el comportamiento en bloque para que esten en
+la misma linea y que queden verticalmente alineados
+dentro el contenedor.
+
+7. Selecionar por etiquetas que los hiperviculos del
+menu de navegación se le agregará color, eliminar
+toda decoración del texto(subrayado) y margen sólo
+a los costados, superior e inferior nada.
+
+8. Estilos para el texto h1, seleccionar la clase: agregar
+tamaño de fuente, alinear texto al centro, agregar imagen 
+al texto, configurar la imagen para no repetir, posicionarla
+al centro, definir color al txto transparente, margen y agregar
+background-clip: text; se utiliza para especificar cómo se
+debe aplicar un fondo a un elemento de texto.
+Cuando se establece en text, el fondo se recorta para
+que solo se muestre detrás del texto, en lugar de ocupar
+todo el espacio del elemento.
+
+9. Seleccionar el id de la sección con fondo y definir:
+imagen de fondo,tamaño, posición, color, alinear texto, alto margen
+y relleno cero.
+
+10. Seleccionar la clase contenido y definir:
+margen, relleno, alinear texto y color al texto.
+
+11. Seleccionar el id del bloque-3 y definir:
+margen y alinear el texto.
+
+
+12. Selccionar la etiqueta del pie de página
+y definir: color de fondo, color, relleno, alinear
+el texto al centro.

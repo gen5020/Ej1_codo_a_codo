@@ -1,0 +1,121 @@
+/*CSS - EXTERNO
+1. Define las variables de colores en el bloque :root 
+Estas variables se usarán para definir los colores en todo el documento.
+
+:root, es un selector de CSS especial que selecciona el 
+elemento raíz del documento HTML, es decir, el elemento <html>. 
+Permite definir variables globales que se pueden usar en cualquier
+parte del documento CSS.
+*/
+:root{
+   --color-primario: #0142b3;
+   --color-secundario:rgb(228, 183, 3);
+}
+*{
+    /*background-color: var(--color-primario);*/
+    color: var(--color-secundario);
+}
+/*
+2. Agregar selector universal, eliminar todo margen y relleno.*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*
+3. Seleccionar la etiqueta body y definir estilo de fuente y fondo.
+*/
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background:linear-gradient(rgb(232, 255, 192),rgb(255, 140, 0),rgb(255, 200, 0))
+}
+/*
+4. Selecciona el encabezado por etiqueta y definir el color de
+fondo, color del texto del encabezado (header). Alinear el contenido
+del encabezado al centro.*/
+header{
+    background-color: var(--color-primario);
+   text-align: center;
+   display: block;
+    
+}
+
+/*5. Asignar una clase llamada logo y seleccionar clase
+Aplica estilos ancho, alto, hacer el logo circular, 
+separar el logo del menú especificando margen a la derecha.
+*/
+.logo{
+ width: 12rem;
+ border-radius: 100%;
+ margin-right: 40px ;
+}
+/*
+6. Seleccionar del header el menu y la división para 
+cambiar el comportamiento en bloque para que esten en
+la misma linea y que queden verticalmente alineados
+dentro el contenedor.*/
+
+.menu{
+    display: inline;
+    vertical-align: middle; /* centrar verticalmente*/
+    font-size: 1.5rem;
+}
+
+/*7. Selecionar por etiquetas que los hiperviculos del
+menu de navegación se le agregará color, eliminar
+toda decoración del texto(subrayado) y margen sólo
+a los costados, superior e inferior nada.*/
+nav a{
+    text-decoration: none;
+    color: aliceblue;
+   /*       top  right  bottom  left  */
+    margin: 0px  20px    0px    20px;
+}
+/*8. Estilos para el texto h1, seleccionar la clase: agregar
+tamaño de fuente, alinear texto al centro, agregar imagen 
+al texto, configurar la imagen para no repetir, posicionarla
+al centro, definir color al txto transparente, margen y agregar
+background-clip: text; se utiliza para especificar cómo se
+debe aplicar un fondo a un elemento de texto.
+Cuando se establece en text, el fondo se recorta para
+que solo se muestre detrás del texto, en lugar de ocupar
+todo el espacio del elemento.*/
+.titulo{
+    font-size: 5rem;
+    text-align: center;
+    background-image: url(../img/blue-yellow-python+.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    color:transparent;
+    background-clip:text;
+    -webkit-background-clip: text;
+}
+
+/*9. Seleccionar el id de la sección con fondo y definir:
+imagen de fondo,tamaño, posición, color, alinear texto, alto margen
+y relleno.*/
+#section-fondo{
+background-image: url(../img/programming-code-coding-or-hacker-background-programming-code-icon-made-with-binary-code-digital-binary-data-and-streaming-digital-code-vector.jpg);
+background-position: center;
+background-size: 100vw;
+background-repeat: no-repeat;
+color: aliceblue;
+text-align: center;
+margin:  20px 0px 20px 0px;
+padding: 20vh 0px 20vh 0px;
+}
+/*10. Seleccionar la clase contenido y definir:
+margen, relleno, alinear texto y color al texto.*/
+.contenido{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    color: aliceblue;
+}
+/*11. Seleccionar el id del bloque-3 y definir:
+margen y alinear el texto.
+
+
+12. Selccionar la etiqueta del pie de página
+y definir: color de fondo, color, relleno, alinear
+el texto al centro.*/
